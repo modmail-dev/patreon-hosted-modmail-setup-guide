@@ -33,8 +33,12 @@ Next we need to grab the bot's token (aka. your bot's login credentials). Simply
 
 ![Discord Token](https://i.imgur.com/1G8oQ8V.png)
 
-Paste your token here (this site is static–nothing is stored and no data is sent to any servers. Unless your browser is hacked, you're perfectly safe to paste your token here):
+Paste your token here (this site is static—nothing is stored and no data is sent to any servers. Unless your browser is hacked, you're perfectly safe to paste your token here):
 
-Token: <input id="token" onchange="document.getElementById('enteredtoken').innerText = this.value;">
+Token: <input id="token" onchange="document.getElementById('enteredtoken').innerText = 'TOKEN=' + this.value; document.getElementById('enteredcid').innerText = atob(this.value.split('.')[0])">
 
-TOKEN=<p id="enteredtoken"></p>
+<div id="enteredtoken"></div>
+<div id="enteredcid"></div>
+
+Last thing on this site is to tok
+![Copy Client ID](https://i.imgr.com/CEnA3SZ.png)
