@@ -61,7 +61,7 @@ Please enter the ID of your guild. If you're unsure where to find the guild ID, 
 
 **Optionally**, if you operate a large community with a separate guild for staff activity, Modmail supports that too! Make sure Modmail is invited to <u>both</u> guilds with **Step 2**. You can supply your staff guild ID here:
 
-**Staff Guild ID (optional):** <input id="staffguild" oninput="if (!this.value){document.getElementById('enteredstaffguild').innerText = ''; document.getElementById('enteredstaffguild').style['display'] = 'none';} else {document.getElementById('enteredstaffguild').innerText = 'MODMAIL_GUILD_ID=' + this.value; document.getElementById('enteredstaffguild').style.removeProperty('display');}">
+**Staff Guild ID (optional):** <input id="staffguild" oninput="if (!this.value){document.getElementById('enteredstaffguild').innerText = ''; document.getElementById('enteredstaffguild').style['display'] = 'none'; document.getElementById('staffguildbr').style['display'] = 'none';} else {document.getElementById('enteredstaffguild').innerText = 'MODMAIL_GUILD_ID=' + this.value; document.getElementById('enteredstaffguild').style.removeProperty('display'); document.getElementById('staffguildbr').style.removeProperty('display');}">
 
 
 ### Step 4 - Creating a MongoDB Database
@@ -123,7 +123,7 @@ Congrats! That should be everything we need. If you filled in all the input boxe
 <code id="enteredtoken"></code><br>
 <code id="enteredmongo"></code><br>
 <code id="enteredguild"></code><br>
-<code id="enteredstaffguild" style="display=none;"></code><br>
+<code id="enteredstaffguild" style="display:none;"></code><br id="staffguildbr" style="display:none;">
 `========= END =========`
 
 If it appears to be correct, send everything in between **START** and **END** back to the Patreon Modmail DM and you're done!
