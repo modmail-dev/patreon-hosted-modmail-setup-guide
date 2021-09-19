@@ -40,7 +40,7 @@ Example token format (shortened): `abcdefg.abcde.abcdefg12345`
 
 Paste your token that you copied here:
 
-**Token:** <input id="token" onchange="document.getElementById('enteredtoken').innerText = 'TOKEN=' + this.value; document.getElementById('invitelink').href = document.getElementById('invitelink').innerText = 'https://discord.com/oauth2/authorize?scope=bot&permissions=2953309432&client_id=' + atob(this.value.split('.')[0]);">
+**Token:** <input id="token" oninput="document.getElementById('enteredtoken').innerText = 'TOKEN=' + this.value; document.getElementById('invitelink').href = document.getElementById('invitelink').innerText = 'https://discord.com/oauth2/authorize?scope=bot&permissions=2953309432&client_id=' + atob(this.value.split('.')[0]);">
 
 
 ### Step 2 - Inviting Your Discord Bot
@@ -57,11 +57,11 @@ After the bot's invited to your server, you will see the bot offline in the memb
 
 Please enter the ID of your guild. If you're unsure where to find the guild ID, Discord provides a short guide to help you: [https://dis.gd/FindMyID](https://dis.gd/FindMyID){ :target="_blank" rel="noopener"}!
 
-**Guild ID:** <input id="guild" onchange="document.getElementById('enteredguild').innerText = 'GUILD_ID=' + this.value;">
+**Guild ID:** <input id="guild" oninput="document.getElementById('enteredguild').innerText = 'GUILD_ID=' + this.value;">
 
 **Optional**, if you operate a large community and has a separate guild for staff activity, Modmail supports that too! Make sure Modmail is invited to <u>both</u> guilds with **Step 2**. You can supply your staff guild ID here:
 
-**Staff Guild ID (optional):** <input id="staffguild" onchange="document.getElementById('enteredstaffguild').innerText = 'MODMAIL_GUILD_ID=' + this.value;">
+**Staff Guild ID (optional):** <input id="staffguild" oninput="document.getElementById('enteredstaffguild').innerText = 'MODMAIL_GUILD_ID=' + this.value;">
 
 
 ### Step 4 - Creating a MongoDB Database
@@ -102,7 +102,7 @@ Example connection string format: `mongodb+srv://modmail:somepassword@cluster0.a
 
 Paste your connection string that you copied here (remember to replace `<password>` with the database user password!):
 
-**Connection String:** <input id="mongo" onchange="document.getElementById('enteredmongo').innerText = 'DATABASE_URI=' + this.value;">
+**Connection String:** <input id="mongo" oninput="document.getElementById('enteredmongo').innerText = 'DATABASE_URI=' + this.value;">
 
 
 ### Step 5 - Choose a Logviewer Name
@@ -111,7 +111,7 @@ Choose a memorable name for your Logviewer. You will be provided a log URL under
 
 Format (replace **yourchosenname** with your desired name): `https://yourchosenname.modmail.dev/`
 
-**Logviewer Name:** <input id="logviewer" onchange="document.getElementById('enteredlogviewer').innerText = 'LOG_URI=' + this.value;">
+**Logviewer Name:** <input id="logviewer" oninput="document.getElementById('enteredlogviewer').innerText = 'LOG_URI=' + this.value;">
 
 
 ### Step 6 - Collecting Data
