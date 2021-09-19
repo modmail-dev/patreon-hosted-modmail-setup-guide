@@ -2,7 +2,7 @@
 
 [Go Back](/)
 
-To create an bot invite link, navigate to the **Oauth2** tab in the Discord Developer Portal for your bot. Copy the client ID.
+To create an bot invite link, navigate to the **Oauth2** tab in the Discord Developer Portal for your bot, and copy the **Client ID**.
 
 ![Copy Client ID](https://i.imgur.com/7NtSmig.png)
 
