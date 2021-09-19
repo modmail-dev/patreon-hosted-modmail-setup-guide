@@ -18,7 +18,7 @@ There will be a few input boxes throughout this page, these are only for your co
 
 ### Step 1 - Creating Discord Bot Account
 
-You will need to create a bot application to interact with the Discord API. Head over to the <a target="_blank" href="https://discordapp.com/developers/applications/">Applications Page</a>. Log in - if you're not already - and click on **New Application**. Give it any name and click **Confirm** to register your bot. 
+You will need to create a bot application to interact with the Discord API. Head over to the [Applications Page](https://discordapp.com/developers/applications/"){: target="_blank" rel="noopener"}. Log in - if you're not already - and click on **New Application**. Give it any name and click **Confirm** to register your bot. 
 
 ![Discord New Application](https://i.imgur.com/sTsk6wz.png)
 
@@ -55,7 +55,7 @@ After the bot's invited to your server, you will see the bot offline in the memb
 
 ### Step 3 - Find Your Guild (Server) ID
 
-Please enter the ID of your guild. If you're unsure where to find the guild ID, Discord provides a short guide to help you: <a target="_blank" href="https://dis.gd/FindMyID">https://dis.gd/FindMyID</a>!
+Please enter the ID of your guild. If you're unsure where to find the guild ID, Discord provides a short guide to help you: [https://dis.gd/FindMyID](https://dis.gd/FindMyID){ :target="_blank" rel="noopener"}!
 
 **Guild ID:** <input id="guild" onchange="document.getElementById('enteredguild').innerText = 'GUILD_ID=' + this.value;">
 
@@ -66,7 +66,7 @@ Please enter the ID of your guild. If you're unsure where to find the guild ID, 
 
 ### Step 4 - Creating a MongoDB Database
 
-Modmail supports MongoDB and you are required to provide a MongoDB connection string for your bot. <a target="_blank" href="https://www.mongodb.com/cloud/atlas">MongoDB Atlas</a> provides a free 500MB tier, which is more than enough to store around 3 million message logs.
+Modmail supports MongoDB and you are required to provide a MongoDB connection string for your bot. [MongoDB Atlas](https://www.mongodb.com/cloud/atlas){ :target="_blank" rel="noopener"} provides a free 500MB tier, which is more than enough to store around 3 million message logs.
 
 ![GIF on Creating MongoDB](https://i.imgur.com/A7S2nPJ.gif)
 
