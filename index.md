@@ -136,4 +136,4 @@ If it appears to be empty or less than 4 lines between **START** and **END**, th
 
 There you go! You should be all set :D
 
-> This guide is written by taku#3343 and parts were taken from the [Modmail Wiki](https://github.com/kyb3r/modmail/wiki/Installation).
+> This guide is written by taku#3343 with parts taken from the [Modmail Wiki](https://github.com/kyb3r/modmail/wiki/Installation).
