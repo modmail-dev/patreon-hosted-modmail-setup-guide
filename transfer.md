@@ -5,7 +5,7 @@
 You have chosen to transfer over your existing Modmail bot to Patreon hosting. See below for your current hosting solution's transfer guide.
  - [Heroku](#heroku)
  - [Repl.it](#replit)
- - [Self Hosting](#self-hosting)
+ - [Self Hosted (Other)](#selfhostedother)
 
 
 ### Heroku
@@ -46,3 +46,23 @@ You will be greeted with a popup text box containing your secrets, copy everythi
 If your bot is still running, press on the **Stop** button at the top and disable any uptime robots you may have enabled to stop the current bot from running. Otherwise, your bot may send duplicate messages.
 
 Lastly, choose a memorable name for your Logviewer. You will be provided with a log URL under our **.modmail.dev** domain name. You can choose anything you like (with a few restrictions), if you feel it's reasonable, then most likely we do too! Note: only 3-16 alphanumeric characters are allowed. Send this to Patreon Modmail DM as well.
+
+
+### Self Hosted (Other)
+
+Whether you host with a Linux VPS, a Windows Server, a Raspberry PI, or even on your PC, the steps are similar. 
+
+1. `cd` to the project's root folder or navigate to the project's root folder with the file browser on your machine.
+2. Open the **.env** file (`cat .env` on Linux Terminal or `type .env` on Windows CMD).
+3. Copy everything in there and send back it to Patreon Modmail DM.<br>**Note: it must include the token, MongoDB connection string, and guild ID.**
+4. Stop the current bot from running.
+
+Lastly, choose a memorable name for your Logviewer. You will be provided with a log URL under our **.modmail.dev** domain name. You can choose anything you like (with a few restrictions), if you feel it's reasonable, then most likely we do too! Note: only 3-16 alphanumeric characters are allowed. Send this to Patreon Modmail DM as well.
+
+
+### What's Next?
+
+After sending all the details back to the Patreon Modmail DM, we will validate everything you sent us. This process might take a few hours depends on our availability, so please bear with us while you wait. We will contact you when the bot is running or if there are any problems!
+
+> This guide is written by taku#3343 with parts taken from the [Modmail Wiki](https://github.com/kyb3r/modmail/wiki/Installation).<br>
+> If you have found any issues with this guide, please report them to me. Thanks ❤️!
