@@ -35,4 +35,6 @@ Next we need to grab the bot's token (aka. your bot's login credentials). Simply
 
 Paste your token here (this site is static–nothing is stored and no data is sent to any servers. Unless your browser is hacked, you're perfectly safe to paste your token here):
 
-<input id="token">Token: </input>
+<div>
+  <input id="token">Token: </input>
+</div>
