@@ -13,7 +13,7 @@ Navigate to [My Repls](https://replit.com/repls){: target="_blank" rel="noopener
 
 On the side panel, click on the lock icon (Secret environment variables). Scroll down to the bottom and click **Open raw editor**.
 
-![Find Repl Secret](https://i.imgur.com/zT6W00E.png)
+![Find Repl Secret](https://i.imgur.com/zT6W00E.png){: style="max-width: 50%;"}
 
 You will be greeted with a popup text box containing your secrets, copy everything in there and send back it to Patreon Modmail DM.
 
