@@ -22,7 +22,7 @@ The page will display all your Modmail configs. Copy every field and send it bac
 
 ![Config Example](https://i.imgur.com/lXIaNzx.png)
 
-If your bot is still running, navigate to the **Resources** tab, click on the pencil icon, turn off the worker switch, and press **confirm**. Otherwise, your bot may send duplicate messages.
+If your bot is still running, navigate to the **Resources** tab. Click on the pencil icon, turn off the worker switch, and press **confirm**. Otherwise, your bot may send duplicate messages.
 
 ![Turn off worker](https://i.imgur.com/GpwnwSB.gif)
 
@@ -39,11 +39,11 @@ On the side panel, click on the lock icon (Secret environment variables). Scroll
 
 ![Find Repl Secret](https://i.imgur.com/zT6W00E.png){: style="max-width: 50%;"}
 
-You will be greeted with a popup text box containing your secrets, copy everything in there and send back it to Patreon Modmail DM.<br>**Note: it must include the token, MongoDB connection string, and guild ID.**
+You will be greeted with a pop-up text box containing your secrets, copy everything in there and send back it to Patreon Modmail DM.<br>**Note: it must include the token, MongoDB connection string, and guild ID.**
 
 ![Secret Example](https://i.imgur.com/HvcvNd3.png)
 
-If your bot is still running, press on the **Stop** button at the top and disable any uptime robots you may have enabled to stop the current bot from running. Otherwise, your bot may send duplicate messages.
+If your bot is still running, press the **Stop** button at the top and disable any uptime robots you may have enabled to stop the current bot from running. Otherwise, your bot may send duplicate messages.
 
 Lastly, choose a memorable name for your Logviewer. You will be provided with a log URL under our **.modmail.dev** domain name. You can choose anything you like (with a few restrictions), if you feel it's reasonable, then most likely we do too! Note: only 3-16 alphanumeric characters are allowed. Send this to Patreon Modmail DM as well.
 
@@ -52,7 +52,7 @@ Lastly, choose a memorable name for your Logviewer. You will be provided with a 
 
 Whether you host with a Linux VPS, a Windows Server, a Raspberry PI, or even on your PC, the steps are similar. 
 
-1. `cd` to the project's root folder or navigate to the project's root folder with the file browser on your machine.
+1. Navigate to the project's root folder on your machine with the file explorer or the `cd` command.
 2. Open the **.env** file (`cat .env` on Linux Terminal or `type .env` on Windows CMD).
 3. Copy everything in there and send back it to Patreon Modmail DM.<br>**Note: it must include the token, MongoDB connection string, and guild ID.**
 4. Stop the current bot from running.
