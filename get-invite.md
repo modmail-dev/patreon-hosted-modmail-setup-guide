@@ -1,4 +1,4 @@
-### Invite Your Bot
+### Creating a Bot Invite
 
 [Go Back](/)
 
