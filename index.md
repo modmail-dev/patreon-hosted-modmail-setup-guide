@@ -71,6 +71,8 @@ Modmail supports MongoDB, and you are required to provide a MongoDB connection s
 <blockquote class="imgur-embed-pub" lang="en" data-id="RSUDtCJ"></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 ![GIF on Creating MongoDB](https://i.imgur.com/A7S2nPJ.gif)
+(View video on [Imgur](https://imgur.com/RSUDtCJ){: target="_blank" rel="noopener"})
+
 
 ### Sign Up
 
