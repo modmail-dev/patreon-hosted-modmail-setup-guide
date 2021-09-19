@@ -20,7 +20,7 @@ Click on the **Settings** tab. Scroll down to the **Config Vars** section and cl
 
 The page will display all your Modmail configs. Copy every field and send it back to Patreon Modmail DM.<br>**Note: it must include the token, MongoDB connection string, and guild ID.**
 
-![Config Example](https://i.imgur.com/lXIaNzx.png){: style="max-width: 50%;"}
+![Config Example](https://i.imgur.com/lXIaNzx.png)
 
 If your bot is still running, navigate to the **Resources** tab, click on the pencil icon, turn off the worker switch, and press **confirm**. Otherwise, your bot may send duplicate messages.
 
