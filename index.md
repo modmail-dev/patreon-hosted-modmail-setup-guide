@@ -53,9 +53,21 @@ Click on the following invite link to invite your bot and follow the Discord pro
 
 Modmail supports MongoDB and you are required to provide a MongoDB connection string for your bot. [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) provides a free 500MB tier, which is more than enough to store around 3 million message logs.
 
-![GIF on creating MongoDB](https://i.imgur.com/A7S2nPJ.gif)
+![GIF on Creating MongoDB](https://i.imgur.com/A7S2nPJ.gif)
 
+#### Sign Up
 
+Complete the sign up form and verify your email. Afterwards, choose "Shared" (free) database when asked. 
+
+![Choosing Shard Database](https://i.imgur.com/lGchKpq.png)
+
+On the following page, choose any of the **North America** region. Make sure the Cluster Type is set to **M0 Sandbox** and **MongoDB 4.4** or newer. Cluster name is irrelevant. 
+
+### Create Database User
+
+Click on **Database Access** on the sidebar, then click the green **Add New Database User** button in the middle. Set the username to `modmail` and password to something random (only letters and numbers, **no symbols**!). <u>You will need to share us this password so don't make it personal</u>. Privileges needs to be set as **Read and write to any database** or **Atlas admin**. Then click the **Add User** button at the bottom.
+
+![Create Database User](https://i.imgur.com/TI1R4nN.png)
 
 <div id="enteredtoken"></div>
 
