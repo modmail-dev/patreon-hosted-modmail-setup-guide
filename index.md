@@ -47,7 +47,7 @@ Paste your token that you copied here:
 
 Click on the following invite link to invite your bot and follow the Discord prompt. All permissions excepted for **Administrator** is <u>required</u>! But we recommend allowing **Administrator** for ease of setup and avoid permission complications.
 
-**Invite link:** <a target="_blank" id="invitelink">Invalid</a>
+**Invite link:** <a target="_blank" rel="noopener" id="invitelink">Invalid</a>
 (If you don't see an invite link or it appears as invalid, it means you didn't input your token on the previous step or your browser is out of date. **Click here** to manually make an invite link.)
 
 After the bot's invited to your server, you will see the bot offline in the members list—that is perfectly normal! It will come online when we start hosting.
