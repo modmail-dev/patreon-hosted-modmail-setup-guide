@@ -11,7 +11,7 @@ If you already hosting an existing Modmail bot and would rather transfer that ov
  - An email account.
  - ~15 minutes of your time.
 
-There will be a few input boxes throughout this page, these are only for your convenience, this website is fully static hosted—meaning nothing is stored and no data is sent to any servers. Unless your browser is hacked, you're perfectly safe to paste anything here. <u>Apart from pasting in the input box, also keep a copy elsewhere in case your browser crashes or reloads.</u>
+There will be a few input boxes throughout this page, these are only for your convenience, this website is fully static hosted—meaning nothing is stored and no data is sent to any servers. Unless your browser is hacked, you're perfectly safe to paste anything here. <u>Keep a copy of everything you paste elsewhere—in case your browser crashes or reloads.</u>
 
 **It's crucial to follow every step carefully! Missing any step might increase the final setup time.**
 
