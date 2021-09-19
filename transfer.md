@@ -5,7 +5,7 @@
 You have chosen to transfer over your existing Modmail bot to Patreon hosting. See below for your current hosting solution's transfer guide.
  - [Heroku](#heroku)
  - [Repl.it](#replit)
- - [Self Hosted (Other)](#selfhostedother)
+ - [Self Hosted (Other)](#self-hosted-other)
 
 
 ### Heroku
