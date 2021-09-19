@@ -6,7 +6,7 @@ To create an bot invite link, navigate to the **Oauth2** tab in the Discord Deve
 
 ![Copy Client ID](https://i.imgur.com/7NtSmig.png)
 
-Use the following template URL and replace the `XXXXXCLIENTIDXXXXX` at the end with your copied client ID:
+Use the following template URL and replace the `XXXXXCLIENTIDXXXXX` at the end with your copied client ID. Don't change anything else!
 
 ```https://discord.com/oauth2/authorize?scope=bot&permissions=2953309432&client_id=XXXXXCLIENTIDXXXXX```
 
