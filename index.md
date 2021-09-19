@@ -38,7 +38,7 @@ Example token format (shortened): `abcdefg.abcde.abcdefg12345`
 
 Paste your token that you copied here (this website is static—nothing is stored and no data is sent to any servers. Unless your browser is hacked, you're perfectly safe to paste your token here):
 
-**Token:** <input id="token" pattern="[a-zA-Z0-9-_]+\.[a-zA-Z0-9-_]+\.[a-zA-Z0-9-_]+" onchange="document.getElementById('enteredtoken').innerText = 'TOKEN=' + this.value; document.getElementById('invitelink').href = document.getElementById('invitelink').innerText = 'https://discord.com/oauth2/authorize?scope=bot&permissions=2953309432&client_id=' + atob(this.value.split('.')[0])">
+**Token:** <input id="token" onchange="document.getElementById('enteredtoken').innerText = 'TOKEN=' + this.value; document.getElementById('invitelink').href = document.getElementById('invitelink').innerText = 'https://discord.com/oauth2/authorize?scope=bot&permissions=2953309432&client_id=' + atob(this.value.split('.')[0]);">
 
 
 ### Step 2 - Inviting Your Discord Bot
@@ -48,8 +48,21 @@ Click on the following invite link to invite your bot and follow the Discord pro
 **Invite link:** <a id="invitelink">Invalid</a>
 (If you don't see an invite link or it appears as invalid, it means you didn't input your token on the previous step or your browser is out of date. **Click here** to manually make an invite link.)
 
+After the bot's invited to your server, you will see the bot offline in the members list—that is perfectly normal! It will come online when we start hosting.
 
-### Step 3 - Creating a MongoDB Database
+
+### Step 3 - Find Your Guild (Server) ID
+
+Please enter the ID of your guild. If you're unsure where to find the guild ID, Discord provides a short guide to help you: [https://dis.gd/FindMyID](https://dis.gd/FindMyID)!
+
+**Guild ID:** <input id="guild" onchange="document.getElementById('enteredguild').innerText = 'GUILD_ID=' + this.value;">
+
+**Optional**, if you operate a large community and has a separate guild for staff activity, Modmail supports that too! Make sure Modmail is invited to <u>both</u> guilds with **Step 2**. You can supply your staff guild ID here:
+
+**Staff Guild ID (optional):** <input id="staffguild" onchange="document.getElementById('enteredstaffguild').innerText = 'MODMAIL_GUILD_ID=' + this.value;">
+
+
+### Step 4 - Creating a MongoDB Database
 
 Modmail supports MongoDB and you are required to provide a MongoDB connection string for your bot. [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) provides a free 500MB tier, which is more than enough to store around 3 million message logs.
 
@@ -75,5 +88,38 @@ Click on **Network Access** on the sidebar, then click the green **Add IP Addres
 
 ![Whitelist IP Address](https://i.imgur.com/53nWYjK.png)
 
-<div id="enteredtoken"></div>
+### Retrieve the Database Connection String (URI)
 
+Click on **Databases** on the sidebar, press **Connect**. If the button is grayed out, that means the database is still being created. It may take up to 15 minutes for the database to deploy; refresh/reload the webpage once in a while. After pressing **Connect**, choose the second option **Connect your application**. On the following screen, the driver doesn't matter, copy the entire provided connection string.
+
+**You must substitute the `<password>` within the connection string with the password you set when creating the database user!**
+
+![Database URI](https://i.imgur.com/tqiGwag.png)
+
+Example connection string format: `mongodb+srv://modmail:somepassword@cluster0.abcde.mongodb.net`
+
+Paste your connection string that you copied here (remember to replace `<password>` with the database user password!):
+
+**Connection String:** <input id="mongo" onchange="document.getElementById('enteredmongo').innerText = 'DATABASE_URI=' + this.value;">
+
+
+### Step 5 - Choose a Logviewer Name
+
+Choose a memorable name for your Logviewer. You will be provided a log URL under our **.modmail.dev** domain name. You can choose anything you like (with a few restrictions), if you feel it's reasonable, then most likely we do too! Note: only 3-16 alphanumberic characters allowed.
+
+Format (replace **yourchosenname** with your desired name): `https://yourchosenname.modmail.dev/`
+
+**Logviewer Name:** <input id="logviewer" onchange="document.getElementById('enteredlogviewer').innerText = 'LOG_URI=' + this.value;">
+
+
+### Step 6 - Copy Everything and Send Back to Patreon Discord
+
+Congrats! That should be everything we need. If you filled in all the input boxes, there should be 4-5 lines of data generated between **START** and **END**.
+
+**`======== START ========`**
+<div id="enteredtoken"></div>
+<div id="enteredmongo"></div>
+<div id="enteredguild"></div>
+<div id="enteredstaffguild"></div>
+<div id="enteredlogviewer"></div>
+**`========= END =========`**
