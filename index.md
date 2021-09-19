@@ -128,8 +128,10 @@ Congrats! That should be everything we need. If you filled in all the input boxe
 
 If it appears to be correct, send everything in between back to the Patreon Modmail DM and you're done!
 
-If it appears to be empty or less than 4 lines between **START** and **END**, then you'll need to make sure you send the following:
+If it appears to be empty or less than 4 lines between **START** and **END**, then you'll need to make sure you send the following to the Patreon Modmail DM:
 - Bot Token
 - MongoDB Connection String (with the `<password>` correctly substituted)
 - Guild ID (and staff guild ID if applicable)
 - Chosen Logviewer Name Under **.modmail.dev**
+
+There you go! You should be all set :D
