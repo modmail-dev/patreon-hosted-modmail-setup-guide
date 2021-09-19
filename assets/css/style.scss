@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
-li.fork {
-  display: none !important;
+div#header {
+  display: none;
+}
+
+section {
+  margin-top: 40px;
 }
