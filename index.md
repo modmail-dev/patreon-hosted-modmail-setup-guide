@@ -2,7 +2,7 @@
 
 Welcome to Patreon hosting! Before we can start hosting your new Modmail bot, we will need some bot info from you—namely a Discord bot token, an external MongoDB database, and some other minor things. This way, you will be the true owner of your Discord bot, and you will have control over the stored data. By the end of this guide, we will hopefully have generated everything we need for bot hosting.
 
-If you're already hosting an existing Modmail bot and would rather transfer that over, [click here](/transfer.html){: target="_blank"} to find out how!
+If you're already hosting an existing Modmail bot and would rather transfer that over, [click here](/transfer.html) to find out how!
 
 ### Getting Started
 
