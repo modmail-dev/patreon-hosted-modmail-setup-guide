@@ -13,6 +13,7 @@ If you already hosting an existing Modmail bot and would rather transfer that ov
 
 **It's crucial to follow every step carefully! Missing any step might increase the final setup time.**
 
+
 ### Step 1 - Creating Discord Bot Account
 
 You will need to create a bot application to interact with the Discord API. Head over to the [Applications Page](https://discordapp.com/developers/applications/). Log in - if you're not already - and click on **New Application**. Give it any name and click **Confirm** to register your bot. 
@@ -42,10 +43,17 @@ Paste your token that you copied here (this website is static—nothing is store
 
 ### Step 2 - Inviting Your Discord Bot
 
-Click on the following invite link to invite your bot. All permissions excepted for **Administrator** is <u>required</u>! But we recommend allowing **Administrator** for ease of setup and avoid permission complications.
+Click on the following invite link to invite your bot and follow the Discord prompt. All permissions excepted for **Administrator** is <u>required</u>! But we recommend allowing **Administrator** for ease of setup and avoid permission complications.
 
 **Invite link:** <a id="invitelink">Invalid</a>
 (If you don't see an invite link or it appears as invalid, it means you didn't input your token on the previous step or your browser is out of date. **Click here** to manually make an invite link.)
+
+
+### Step 3 - Creating a MongoDB Database
+
+Modmail supports MongoDB and you are required to provide a MongoDB connection string for your bot. [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) provides a free 500MB tier, which is more than enough to store around 3 million message logs.
+
+![GIF on creating MongoDB](https://i.imgur.com/A7S2nPJ.gif)
 
 
 
