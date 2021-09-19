@@ -70,7 +70,7 @@ Modmail supports MongoDB and you are required to provide a MongoDB connection st
 
 ![GIF on Creating MongoDB](https://i.imgur.com/A7S2nPJ.gif)
 
-#### Sign Up
+### Sign Up
 
 Complete the sign up form and verify your email. Afterwards, choose "Shared" (free) database when asked. 
 
