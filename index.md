@@ -11,6 +11,8 @@ If you already hosting an existing Modmail bot and would rather transfer that ov
  - An email account.
  - ~15 minutes of your time.
 
+There will be a few input boxes throughout this page, these are only for your convenience, this website is fully static hosted—meaning nothing is stored and no data is sent to any servers. Unless your browser is hacked, you're perfectly safe to paste anything here. <u>Apart from pasting in the input box, also keep a copy elsewhere in case your browser crashes or reloads.</u>
+
 **It's crucial to follow every step carefully! Missing any step might increase the final setup time.**
 
 
@@ -36,7 +38,7 @@ Next we need to grab the bot's token (aka. your bot's login credentials). Simply
 
 Example token format (shortened): `abcdefg.abcde.abcdefg12345`
 
-Paste your token that you copied here (this website is static—nothing is stored and no data is sent to any servers. Unless your browser is hacked, you're perfectly safe to paste your token here):
+Paste your token that you copied here:
 
 **Token:** <input id="token" onchange="document.getElementById('enteredtoken').innerText = 'TOKEN=' + this.value; document.getElementById('invitelink').href = document.getElementById('invitelink').innerText = 'https://discord.com/oauth2/authorize?scope=bot&permissions=2953309432&client_id=' + atob(this.value.split('.')[0]);">
 
@@ -112,7 +114,7 @@ Format (replace **yourchosenname** with your desired name): `https://yourchosenn
 **Logviewer Name:** <input id="logviewer" onchange="document.getElementById('enteredlogviewer').innerText = 'LOG_URI=' + this.value;">
 
 
-### Step 6 - Copy Everything and Send Back to Patreon Discord
+### Step 6 - Collecting Data
 
 Congrats! That should be everything we need. If you filled in all the input boxes, there should be 4-5 lines of data generated between **START** and **END**.
 
@@ -123,3 +125,11 @@ Congrats! That should be everything we need. If you filled in all the input boxe
 <div id="enteredstaffguild"></div>
 <div id="enteredlogviewer"></div>
 **`========= END =========`**
+
+If it appears to be correct, send everything in between back to the Patreon Modmail DM and you're done!
+
+If it appears to be empty or less than 4 lines between **START** and **END**, then you'll need to make sure you send the following:
+- Bot Token
+- MongoDB Connection String (with the `<password>` correctly substituted)
+- Guild ID (and staff guild ID if applicable)
+- Chosen Logviewer Name Under **.modmail.dev**
