@@ -3,6 +3,9 @@
 [Go Back](/)
 
 You have chosen to transfer over your existing Modmail bot to Patreon hosting. See below for your current hosting method.
+ - [Heroku](#heroku)
+ - [Self Hosting](#self-hosting)
+ - [Repl.it](#replit)
 
 
 ### Repl.it
