@@ -27,4 +27,12 @@ If you choose to customize your bot, be sure to update the profile picture here 
 
 ![Discord Bot Settings](https://i.imgur.com/WljgVfP.png)
 
-**Make sure to keep this token private. Anyone who has it can control (or "hack") your bot and will cause malicious damage to your server. If you feel that your token has been leaked, click on `Regenerate` to invalidate the old one and create a new bot token (you'll need to update us with your new token after regenerating it).**
+Next we need to grab the bot's token (aka. your bot's login credentials). Simply, scroll back to the top of that page, and click copy.
+
+**Make sure to keep the token private. Anyone who has it can control (or "hack") your bot and will cause malicious damage to your server. If you feel that your token has been leaked, click on `Regenerate` to invalidate the old one and create a new bot token (you'll need to update us with your new token after regenerating it).**
+
+![Discord Token](https://i.imgur.com/1G8oQ8V.png)
+
+Paste your token here (this site is static–nothing is stored and no data is sent to any servers. Unless your browser is hacked, you're perfectly safe to paste your token here):
+
+<input id="token-input"></input>
