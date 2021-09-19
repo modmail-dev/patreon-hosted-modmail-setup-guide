@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+## Thank you for subscribing to Patreon!
 
-You can use the [editor on GitHub](https://github.com/kyb3rr/patreon-hosted-modmail-setup-guide/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Welcome to Patreon hosting! Before we can start hosting your new Modmail bot, we will need some bot infos from you—namely a Discord bot token, an external MongoDB database, and some other minor things. By the end of this guide, we will hopefully have generated everything we need for bot hosting.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+If you already hosting an existing Modmail bot and would rather transfer that over, **click here** to find out how!
 
-### Markdown
+### Getting Started
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#### What you'll need:
+ - An internet connection and browser.
+ - An email account.
+ - ~15 minutes of your time.
 
-```markdown
-Syntax highlighted code block
+**It's crucial to follow every step carefully! Missing any step might increase the final setup time.**
 
-# Header 1
-## Header 2
-### Header 3
+### Step 1 - Creating Discord Bot Account
 
-- Bulleted
-- List
+You will need to create a bot application to interact with the Discord API. Head over to the [Applications Page](https://discordapp.com/developers/applications/). Log in - if you're not already - and click on **New Application**. Give it any name and click **Confirm** to register your bot. 
 
-1. Numbered
-2. List
+![Discord New Application](https://i.imgur.com/sTsk6wz.png)
 
-**Bold** and _Italic_ and `Code` text
+Here you can customize your bot profile with a profile picture and an "About Me" section. Afterwards, press on the **Bot** tab, click on **Add Bot**, then choose **Yes, do it!** to confirm.
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kyb3rr/patreon-hosted-modmail-setup-guide/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+![Discord Build-A-Bot](https://i.imgur.com/6MikkYq.png)
