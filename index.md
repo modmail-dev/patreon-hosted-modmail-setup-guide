@@ -48,7 +48,7 @@ Paste your token that you copied here:
 Click on the following invite link to invite your bot and follow the Discord prompt. All permissions excepted for **Administrator** is <u>required</u>! But we recommend allowing **Administrator** for ease of setup and avoid permission complications.
 
 **Invite link:** <a target="_blank" rel="noopener" id="invitelink">Invalid</a>
-(If you don't see an invite link, or it appears as invalid, or the link doesn't work, it means you didn't input your token on the previous step, or your browser is out of date. **Click here** to manually make an invite link.)
+(If you don't see an invite link, or it appears as invalid, or the link doesn't work, it means you didn't input your token on the previous step, or your browser is out of date. [Click here](/get-invite.html) to manually make an invite link.)
 
 After the bot's invited to your server, you will see the bot offline in the members list—that is perfectly normal! It will come online when we start hosting.
 
@@ -142,6 +142,7 @@ There you go! You should be all set :D
 ### What's Next?
 
 After sending all the details back to the Patreon Modmail DM, we will validate everything you sent us. This process might take a few hours depends on our availability, so please bear with us while you wait. We will contact you when the bot is running or if there are any problems!
+
 
 > This guide is written by taku#3343 with parts taken from the [Modmail Wiki](https://github.com/kyb3r/modmail/wiki/Installation).<br>
 > If you have found any issues with this guide, please report them to me. Thanks ❤️!
