@@ -69,5 +69,11 @@ Click on **Database Access** on the sidebar, then click the green **Add New Data
 
 ![Create Database User](https://i.imgur.com/TI1R4nN.png)
 
+### Whitelist All IP
+
+Click on **Network Access** on the sidebar, then click the green **Add IP Address** button in the middle. Click on **ALLOW ACCESS FROM EVERYWHERE**, make sure `0.0.0.0/0` shows up below. Press **Confirm** to save the changes.
+
+![Whitelist IP Address](https://i.imgur.com/53nWYjK.png)
+
 <div id="enteredtoken"></div>
 
