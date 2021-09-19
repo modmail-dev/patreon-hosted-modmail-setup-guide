@@ -33,10 +33,21 @@ Next we need to grab the bot's token (aka. your bot's login credentials). Simply
 
 ![Discord Token](https://i.imgur.com/1G8oQ8V.png)
 
-Paste your token here (this site is static—nothing is stored and no data is sent to any servers. Unless your browser is hacked, you're perfectly safe to paste your token here):
+Example token format (shortened): `abcdefg.abcde.abcdefg12345`
 
-Token: <input id="token" pattern="[a-zA-Z0-9-_]+\.[a-zA-Z0-9-_]+\.[a-zA-Z0-9-_]+" onchange="document.getElementById('enteredtoken').innerText = 'TOKEN=' + this.value; document.getElementById('enteredcid').innerText = atob(this.value.split('.')[0])">
+Paste your token that you copied here (this website is static—nothing is stored and no data is sent to any servers. Unless your browser is hacked, you're perfectly safe to paste your token here):
+
+**Token:** <input id="token" pattern="[a-zA-Z0-9-_]+\.[a-zA-Z0-9-_]+\.[a-zA-Z0-9-_]+" onchange="document.getElementById('enteredtoken').innerText = 'TOKEN=' + this.value; document.getElementById('invitelink').href = document.getElementById('invitelink').innerText = 'https://discord.com/oauth2/authorize?scope=bot&permissions=2953309432&client_id=' + atob(this.value.split('.')[0])">
+
+
+### Step 2 - Inviting Your Discord Bot
+
+Click on the following invite link to invite your bot. All permissions excepted for **Administrator** is <u>required</u>! But we recommend allowing **Administrator** for ease of setup and avoid permission complications.
+
+**Invite link:** <a id="invitelink">Invalid</a>
+(If you don't see an invite link or it appears as invalid, it means you didn't input your token on the previous step or your browser is out of date. **Click here** to manually make an invite link.)
+
+
 
 <div id="enteredtoken"></div>
-<div id="enteredcid"></div>
 
