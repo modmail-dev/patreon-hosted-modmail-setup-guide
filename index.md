@@ -132,8 +132,14 @@ If it appears to be empty or less than 4 lines between **START** and **END**, th
 - Bot Token
 - MongoDB Connection String (with the `<password>` correctly substituted)
 - Guild ID (and staff guild ID if applicable)
-- Chosen Logviewer Name Under **.modmail.dev**
+- Your Chosen Logviewer Name Under **.modmail.dev**
 
 There you go! You should be all set :D
 
-> This guide is written by taku#3343 with parts taken from the [Modmail Wiki](https://github.com/kyb3r/modmail/wiki/Installation).
+
+### What's Next?
+
+After sending all the details back to the Patreon Modmail DM, we will validate everything you sent us. This process might take a few hours depends on our availability, so please bear with us while you wait. We will contact you when the bot is running or if there are any problems!
+
+> This guide is written by taku#3343 with parts taken from the [Modmail Wiki](https://github.com/kyb3r/modmail/wiki/Installation).<br>
+> If you found any issues with this guide, please report to me. kindly appreciated ❤️!
