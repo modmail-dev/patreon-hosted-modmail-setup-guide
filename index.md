@@ -35,7 +35,7 @@ Next we need to grab the bot's token (aka. your bot's login credentials). Simply
 
 Paste your token here (this site is static—nothing is stored and no data is sent to any servers. Unless your browser is hacked, you're perfectly safe to paste your token here):
 
-Token: <input id="token" onchange="document.getElementById('enteredtoken').innerText = 'TOKEN=' + this.value; document.getElementById('enteredcid').innerText = atob(this.value.split('.')[0])">
+Token: <input id="token" pattern="^[\w-]+\.[\w-]++\.[\w-]+$" onchange="document.getElementById('enteredtoken').innerText = 'TOKEN=' + this.value; document.getElementById('enteredcid').innerText = atob(this.value.split('.')[0])">
 
 <div id="enteredtoken"></div>
 <div id="enteredcid"></div>
