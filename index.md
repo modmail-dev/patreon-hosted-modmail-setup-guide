@@ -119,11 +119,11 @@ Format (replace **yourchosenname** with your desired name): `https://yourchosenn
 Congrats! That should be everything we need. If you filled in all the input boxes, there should be 4-5 lines of data generated between **START** and **END**.
 
 **`======== START ========`**
-<div id="enteredtoken"></div>
-<div id="enteredmongo"></div>
-<div id="enteredguild"></div>
-<div id="enteredstaffguild"></div>
-<div id="enteredlogviewer"></div>
+<code id="enteredtoken"></code>
+<code id="enteredmongo"></code>
+<code id="enteredguild"></code>
+<code id="enteredstaffguild"></code>
+<code id="enteredlogviewer"></code>
 **`========= END =========`**
 
 If it appears to be correct, send everything in between back to the Patreon Modmail DM and you're done!
