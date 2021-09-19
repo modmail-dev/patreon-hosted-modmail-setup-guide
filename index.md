@@ -118,7 +118,7 @@ Format (replace **yourchosenname** with your desired name): `https://yourchosenn
 
 Congrats! That should be everything we need. If you filled in all the input boxes, there should be 4-5 lines of data generated between **START** and **END**.
 
-*======== START ========`<br>
+`======== START ========`<br>
 <code id="enteredtoken"></code><br>
 <code id="enteredmongo"></code><br>
 <code id="enteredguild"></code><br>
