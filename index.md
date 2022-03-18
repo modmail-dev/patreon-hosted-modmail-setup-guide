@@ -24,13 +24,13 @@ You will need to create a bot application to interact with the Discord API. Head
 
 Here you can customize your bot with a profile picture and an "About Me" section. Afterwards, press on the **Bot** tab, click on **Add Bot**, then choose **Yes, do it!** to confirm.
 
-![Discord Build-A-Bot](https://i.imgur.com/j0klb1X.png)
+![Discord Build-A-Bot](https://i.imgur.com/6MikkYq.png)
 
 If you choose to customize your bot, be sure to update the profile picture here too, and choose a username for your bot.
 
 Once that's complete, scroll down and <u>disable</u> **Public Bot** and <u>enable</u> both **Server Members Intent** and **Message Content Intent**. Don't forget to press the green **Save Changes** button!
 
-![Discord Bot Settings](https://i.imgur.com/WljgVfP.png)
+![Discord Bot Settings](https://i.imgur.com/j0klb1X.png)
 
 Next, we need to grab the bot's token (aka. your bot's login credentials). Simply scroll back to the top of that page, and click copy.
 
