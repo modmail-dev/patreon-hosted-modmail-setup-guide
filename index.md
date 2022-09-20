@@ -70,9 +70,7 @@ Please enter the ID of your guild. If you're unsure where to find the guild ID, 
 
 Modmail supports MongoDB, and you are required to provide a MongoDB connection string for your bot. [MongoDB Atlas](https://www.mongodb.com/cloud/atlas){: target="_blank" rel="noopener"} provides a free 500MB tier, which is more than enough to store around 3 million message logs.
 
-![GIF on Creating MongoDB](https://i.imgur.com/A7S2nPJ.gif)
-(View video on [Imgur](https://imgur.com/RSUDtCJ){: target="_blank" rel="noopener"})
-
+{% include video-guide.html %}
 
 ### Sign Up
 
