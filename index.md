@@ -80,7 +80,7 @@ Complete the sign-up form and verify your email. Afterwards, choose "Shared" (fr
 
 ![Choosing Shard Database](https://i.imgur.com/lGchKpq.png)
 
-On the following page, choose any of the **North America** region. Make sure the Cluster Type is set to **M0 Sandbox** and **MongoDB 4.4** or newer. The cluster name is irrelevant. 
+On the following page, choose any of the **North America** region. Make sure the Cluster Type is set to **M0 Sandbox** and **MongoDB 5.0** or newer. The cluster name can be anything. 
 
 ### Create Database User
 
@@ -90,7 +90,7 @@ Click on **Database Access** on the sidebar, then click the green **Add New Data
 
 ### Whitelist All IP
 
-Click on **Network Access** on the sidebar, then click the green **Add IP Address** button in the middle. Click on **ALLOW ACCESS FROM EVERYWHERE**, make sure `0.0.0.0/0` shows up below. Press **Confirm** to save the changes.
+Click on **Network Access** on the sidebar, then click the green **Add IP Address** button in the middle. You must set the IP to `0.0.0.0/0`. Press **Confirm** to save the changes.
 
 ![Whitelist IP Address](https://i.imgur.com/53nWYjK.png)
 
