@@ -1,19 +1,19 @@
-## Thank you for subscribing to Patreon!
+## Thank you for hosting with us!
 
-Welcome to Patreon hosting! Before we can start hosting your new Modmail bot, we will need some bot info from you—namely a Discord bot token, an external MongoDB database, and some other minor things. This way, you will be the true owner of your Discord bot, and you will have control over the stored data. By the end of this guide, we will hopefully have generated everything we need for bot hosting.
+Welcome to Modmail hosting! Before we can start hosting your new Modmail bot, we will need some bot info from you: a Discord bot token, an external MongoDB database, and some other minor things. This way, you will be the true owner of your Discord bot, and you will have control over the stored data. By the end of this guide, we will have generated everything we need for bot hosting.
 
-If you're already hosting an existing Modmail bot and would rather transfer that over, [click here](/transfer.html) to find out how!
+If you're already hosting **an existing Modmail bot** and would rather transfer that over: [click here](/transfer.html).
 
 ### Getting Started
 
 #### What you'll need:
  - An internet connection and browser.
  - An email account.
- - ~15 minutes of your time.
+ - 5-15 minutes of your time.
 
-There will be a few input boxes throughout this page, and they are only for your convenience. This website is fully statically hosted—meaning nothing is stored, and we send no data to any servers. Unless your browser got hacked, you're perfectly safe to paste anything here. <br><u>Keep a copy of everything you paste elsewhere—in case your browser crashes or reloads.</u>
+There will be multiple input boxes throughout this page, please fill them out as you complete this guide. This website is fully static—meaning everything is only temporarily stored in your browser. <br><u>Keep a copy of everything you paste here, since the input boxes will be cleared if your browser crashes or reloads.</u>
 
-**It's crucial to follow every step carefully! Missing any step might increase the final setup time.**
+**Please follow every step carefully! Every detail is important in the setup process.**
 
 
 ### Step 1 - Creating Discord Bot Account
