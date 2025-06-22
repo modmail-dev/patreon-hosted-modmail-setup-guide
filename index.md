@@ -18,7 +18,7 @@ There will be multiple input boxes throughout this page, please fill them out as
 
 ### Step 1 - Creating Discord Bot Account
 
-You will need to create a bot application to interact with the Discord API. Head over to the [Applications Page](https://discordapp.com/developers/applications/){: target="_blank" rel="noopener"}. Log in—if you're not already—and click on **New Application**. Give it any name and click **Confirm** to register your bot. 
+You will need to create a bot application, this is how you make a new Discord bot account. Head over to the [Applications Page](https://discordapp.com/developers/applications/){: target="_blank" rel="noopener"}. Log in (if you've not already) and click on **New Application**. Give it any name and click **Confirm** to register your bot. 
 
 ![Discord New Application](https://i.imgur.com/sTsk6wz.png)
 
