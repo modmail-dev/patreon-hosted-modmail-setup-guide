@@ -20,15 +20,15 @@ There will be multiple input boxes throughout this page, please fill them out as
 
 You will need to create a bot application, this is how you make a new Discord bot account. Head over to the [Applications Page](https://discord.com/developers/applications/){: target="_blank" rel="noopener"}. Log in (if you've not already) and click on **New Application**. Give your bot a username and click **Create** to register your bot. 
 
-![Discord New Application](https://i.imgur.com/sTsk6wz.png)
+![Discord New Application](/assets/image/step1-1.png)
 
 You are able to customize your bot's profile picture/banner (Bot -> icon/banner) and the "About Me" section (General Information -> description). After customizing your bot, press on the **Installation** tab, **disable User Install**, and set **Install Link** to **None**.
 
-![Discord Build-A-Bot](https://i.imgur.com/6MikkYq.png)
+![Discord Installation settings](/assets/image/step1-2.png)
 
 Next, navigate to the **Bot** tab, scroll down and <u>disable</u> **Public Bot** and <u>enable</u> both **Server Members Intent** and **Message Content Intent**. Don't forget to press the green **Save Changes** button!
 
-![Discord Bot Settings](https://i.imgur.com/j0klb1X.png)
+![Discord Bot Settings](/assets/image/step1-3.png)
 
 Lastly, we need to grab the bot's token (aka. your bot's login credentials). Scroll to the top of the page, and click **Reset Token** and then **copy the token**.
 
