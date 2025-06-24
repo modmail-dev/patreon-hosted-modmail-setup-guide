@@ -2,7 +2,7 @@
 
 Welcome to Modmail hosting! Before we can start hosting your new Modmail bot, we will need some bot info from you: a Discord bot token, an external MongoDB database, and some other minor things. This way, you will be the true owner of your Discord bot, and you will have control over the stored data. By the end of this guide, we will have generated everything we need for bot hosting.
 
-If you're already hosting **an existing Modmail bot** and would rather transfer that over: [click here](/transfer.html).
+If you're already running **an existing Modmail bot** and want to transfer it over: [click here](/transfer.html).
 
 ### Getting Started
 
@@ -18,52 +18,48 @@ There will be multiple input boxes throughout this page, please fill them out as
 
 ### Step 1 - Creating Discord Bot Account
 
-You will need to create a bot application, this is how you make a new Discord bot account. Head over to the [Applications Page](https://discordapp.com/developers/applications/){: target="_blank" rel="noopener"}. Log in (if you've not already) and click on **New Application**. Give it any name and click **Confirm** to register your bot. 
+You will need to create a bot application, this is how you make a new Discord bot account. Head over to the [Applications Page](https://discord.com/developers/applications/){: target="_blank" rel="noopener"}. Log in (if you've not already) and click on **New Application**. Give your bot a username and click **Create** to register your bot. 
 
 ![Discord New Application](https://i.imgur.com/sTsk6wz.png)
 
-Here you can customize your bot with a profile picture and an "About Me" section. Afterwards, press on the **Bot** tab, click on **Add Bot**, then choose **Yes, do it!** to confirm.
+You are able to customize your bot's profile picture/banner (Bot -> icon/banner) and the "About Me" section (General Information -> description). After customizing your bot, press on the **Installation** tab, **disable User Install**, and set **Install Link** to **None**.
 
 ![Discord Build-A-Bot](https://i.imgur.com/6MikkYq.png)
 
-If you choose to customize your bot, be sure to update the profile picture here too, and choose a username for your bot.
-
-Once that's complete, scroll down and <u>disable</u> **Public Bot** and <u>enable</u> both **Server Members Intent** and **Message Content Intent**. Don't forget to press the green **Save Changes** button!
+Next, navigate to the **Bot** tab, scroll down and <u>disable</u> **Public Bot** and <u>enable</u> both **Server Members Intent** and **Message Content Intent**. Don't forget to press the green **Save Changes** button!
 
 ![Discord Bot Settings](https://i.imgur.com/j0klb1X.png)
 
-Next, we need to grab the bot's token (aka. your bot's login credentials). Simply scroll back to the top of that page, and click copy.
+Lastly, we need to grab the bot's token (aka. your bot's login credentials). Scroll to the top of the page, and click **Reset Token** and then **copy the token**.
 
-**Make sure to keep the token private. Anyone who has it can control (or "hack") your bot, which can cause malicious damage to your server. If you feel that your token has been leaked, click on `Regenerate` to invalidate the old one and create a new bot token (you'll need to update us with your new token after regenerating it).**
-
-![Discord Token](https://i.imgur.com/1G8oQ8V.png)
+**Make sure to keep the token private. Anyone who has it can control (or "hack") your bot and abuse your server. If you feel that your token has been leaked, click on `Reset Token` to invalidate the old one and create a new bot token (you'll need to send us your new token if you ever click reset token).**
 
 Example token format (shortened): `abcdefg.abcde.abcdefg12345`
 
 Paste your token that you copied here:
 
-**Token:** <input id="token" oninput="document.getElementById('enteredtoken').innerText = 'TOKEN=' + this.value; document.getElementById('invitelink').href = document.getElementById('invitelink').innerText = 'https://discord.com/oauth2/authorize?scope=bot&permissions=2953309432&client_id=' + atob(this.value.split('.')[0]);">
+**Token:** <input id="token" oninput="document.getElementById('enteredtoken').innerText = 'TOKEN=' + this.value; document.getElementById('invitelink').href = document.getElementById('invitelink').innerText = 'https://discord.com/oauth2/authorize?scope=bot&integration_type=0&scope=applications.commands+bot&permissions=533381770488&client_id=' + atob(this.value.split('.')[0]);">
 
 
 ### Step 2 - Inviting Your Discord Bot
 
-Click on the following invite link to invite your bot and follow the Discord prompt. All permissions excepted for **Administrator** is <u>required</u>! But we recommend allowing **Administrator** for ease of setup and avoid permission complications.
+Click on the following invite link to invite your bot and follow the Discord prompt. All permissions excepted for **Administrator** is <u>required</u>! We recommend allowing **Administrator** if you struggle with Discord's permission system.
 
 **Invite link:** <a target="_blank" rel="noopener" id="invitelink">Invalid</a>
-(If you don't see an invite link, or it appears as invalid, or the link doesn't work, it means you didn't input your token on the previous step, or your browser is out of date. [Click here](/get-invite.html) to manually make an invite link.)
+(If you don't see an invite link or it says invalid, or if the link doesn't work, then it means you didn't input your token correctly on the previous step, or your browser is out of date. [Click here](/get-invite.html) to manually make an invite link.)
 
-After the bot's invited to your server, you will see the bot offline in the members list—that is perfectly normal! It will come online when we start hosting.
+After the bot's invited to your server, you will see the bot offline in the members list—that is perfectly normal! It will come online when hosting starts.
 
 
-### Step 3 - Find Your Guild (Server) ID
+### Step 3 - Find Your Server ID
 
-Please enter the ID of your guild. If you're unsure where to find the guild ID, Discord provides a short guide to help you: [https://dis.gd/FindMyID](https://dis.gd/FindMyID){: target="_blank" rel="noopener"}!
+Please enter the ID of your server. If you're unsure where to find the server ID, Discord provides a short guide to help you: [https://dis.gd/FindMyID](https://dis.gd/FindMyID){: target="_blank" rel="noopener"}!
 
-**Guild ID:** <input id="guild" oninput="document.getElementById('enteredguild').innerText = 'GUILD_ID=' + this.value;">
+**Server ID:** <input id="guild" oninput="document.getElementById('enteredguild').innerText = 'GUILD_ID=' + this.value;">
 
-**Optionally**, if you operate a large community with a separate guild for staff activity, Modmail supports that too! Make sure Modmail is invited to <u>both</u> guilds with **Step 2**. You can supply your staff guild ID here:
+**Optional, separate server setup:** if you operate a large community and uses a separate staff-only server (in addition to your public server), Modmail supports that too! Users can see the Modmail bot from the public server, DM the bot, and then Modmail will create the threads in your staff server. Invite Modmail to <u>both</u> servers using the same invite link from **Step 2** (Modmail doesn't need any special permissions in the public server). You can supply your staff server ID here:
 
-**Staff Guild ID (optional):** <input id="staffguild" oninput="if (!this.value){document.getElementById('enteredstaffguild').innerText = ''; document.getElementById('enteredstaffguild').style['display'] = 'none'; document.getElementById('staffguildbr').style['display'] = 'none';} else {document.getElementById('enteredstaffguild').innerText = 'MODMAIL_GUILD_ID=' + this.value; document.getElementById('enteredstaffguild').style.removeProperty('display'); document.getElementById('staffguildbr').style.removeProperty('display');}">
+**Staff-Only Server ID (optional):** <input id="staffguild" oninput="if (!this.value){document.getElementById('enteredstaffguild').innerText = ''; document.getElementById('enteredstaffguild').style['display'] = 'none'; document.getElementById('staffguildbr').style['display'] = 'none';} else {document.getElementById('enteredstaffguild').innerText = 'MODMAIL_GUILD_ID=' + this.value; document.getElementById('enteredstaffguild').style.removeProperty('display'); document.getElementById('staffguildbr').style.removeProperty('display');}">
 
 
 ### Step 4 - Creating a MongoDB Database
