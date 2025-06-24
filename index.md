@@ -22,7 +22,7 @@ You will need to create a bot application, this is how you make a new Discord bo
 
 ![Discord New Application](/assets/image/step1-1.png)
 
-You are able to customize your bot's profile picture/banner (Bot -> icon/banner) and the "About Me" section (General Information -> description). After customizing your bot, press on the **Installation** tab, **disable User Install**, and set **Install Link** to **None**.
+You are able to customize your bot's profile picture and banner (Bot -> icon/banner) and the About Me section (General Information -> description). After customizing your bot, go to the **Installation** tab, <u>disable</u> **User Install**, and set **Install Link** to **None**.
 
 ![Discord Installation settings](/assets/image/step1-2.png)
 
