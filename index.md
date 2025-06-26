@@ -43,7 +43,7 @@ Paste your token that you copied here:
 
 ### Step 2 - Inviting Your Discord Bot
 
-Click on the following invite link to invite your bot and follow the Discord prompt. All permissions excepted for **Administrator** is <u>required</u>! We recommend allowing **Administrator** if you struggle with Discord's permission system.
+Click on the following invite link to invite your bot and follow the Discord prompt. All permissions except for **Administrator** is <u>required</u>! We recommend allowing **Administrator** if you struggle with Discord's permission system.
 
 **Invite link:** <a target="_blank" rel="noopener" id="invitelink">Invalid</a>
 (If you don't see an invite link or it says invalid, or if the link doesn't work, then it means you didn't input your token correctly on the previous step, or your browser is out of date. [Click here](/get-invite.html) to manually make an invite link.)
@@ -64,19 +64,23 @@ Please enter the ID of your server. If you're unsure where to find the server ID
 
 ### Step 4 - Creating a MongoDB Database
 
-Modmail supports MongoDB, and you are required to provide a MongoDB connection string for your bot. [MongoDB Atlas](https://www.mongodb.com/cloud/atlas){: target="_blank" rel="noopener"} provides a free 500MB tier, which is more than enough to store around 3 million message logs.
+Modmail stores all configurations and logs in MongoDB, and you are required to provide a MongoDB connection string for your bot. [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database){: target="_blank" rel="noopener"} provides a free 500MB tier, which is more than enough to store around 3 million message logs. Due to security concerns, we do not provide hosting for your data.
 
-#### Video Tutorial:
+#### Video Tutorial (Slightly Outdated):
 
 {% include video-guide.html %}
 
 ### Sign Up
 
-Complete the sign-up form and verify your email. Afterwards, choose "Shared" (free) database when asked. 
+[Sign-up for an account](https://www.mongodb.com/cloud/atlas/register){: target="_blank" rel="noopener"} and verify your email. 
 
-![Choosing Shard Database](https://i.imgur.com/lGchKpq.png)
+On the following page, click **Skip Personalization** (these questions does not matter). 
 
-On the following page, choose any of the **North America** region. Make sure the Cluster Type is set to **M0 Sandbox** and **MongoDB 5.0** or newer. The cluster name can be anything. 
+![MongoDB Personalization Questions](/assets/image/step4-1.png)
+
+Next, you will be prompted to deploy your cluster. Click on the **free** option. Then choose any provider/region, US-WEST / US-CENTRAL is preferred but anything is fine. The cluster name can be anything. <u>Disable</u> both quick setup options!
+
+![MongoDB Deploy Cluster](/assets/image/step4-2.png)
 
 ### Create Database User
 
