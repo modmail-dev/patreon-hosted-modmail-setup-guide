@@ -66,19 +66,15 @@ Please enter the ID of your server. If you're unsure where to find the server ID
 
 Modmail stores all configurations and logs in MongoDB, and you are required to provide a MongoDB connection string for your bot. [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database){: target="_blank" rel="noopener"} provides a free 500MB tier, which is more than enough to store around 3 million message logs. Due to security concerns, we do not provide hosting for your data.
 
-#### Video Tutorial (Slightly Outdated):
-
-{% include video-guide.html %}
-
 ### Sign Up
 
 [Sign-up for an account](https://www.mongodb.com/cloud/atlas/register){: target="_blank" rel="noopener"} and verify your email. 
 
-On the following page, click **Skip Personalization** (these questions does not matter). 
+On the following page, click **Skip Personalization** (these questions do not matter). 
 
 ![MongoDB Personalization Questions](/assets/image/step4-1.png)
 
-Next, you will be prompted to deploy your cluster. Click on the **free** option. Then choose any provider/region, US-WEST / US-CENTRAL is preferred but anything is fine. The cluster name can be anything. **<u>Disable</u> both quick setup options!**
+Next, you will be prompted to deploy your cluster. Choose the **free** option, then select any provider and region: us-west / us-central is preferred, but anything is fine. The cluster name can be anything. **<u>Disable</u> both quick setup options!**
 
 ![MongoDB Deploy Cluster](/assets/image/step4-2.png)
 
@@ -88,25 +84,23 @@ You should now see a quick setup pop-up window asking you to add connection IP a
 
 #### IP Address Whitelist
 
-Choose **Allow Access from Everywhere**, it will autofill `0.0.0.0/0` as the IP address (don't change this), click **Add IP Address** to save.
+Choose **Allow Access from Everywhere**, it will autofill `0.0.0.0/0` under IP address (don't change this), click **Add IP Address** to save.
 
 ![Whitelist IP](/assets/image/step4-3.gif)
 
 #### Create Database User
 
-Under username: type `modmail`, and under password: type a random password with **only letters and numbers** (no symbols allowed).  <u>You will need to share us this password so don't make it personal.</u> Click **Create Database User** to save.
+Under username: type `modmail`, and under password: type a random password with **only letters and numbers** (don't use symbols!).  <u>You will need to share us this password so don't make it personal.</u> Click **Create Database User** to save.
 
 ![Create user](/assets/image/step4-4.gif)
 
 #### Retrieve the Database Connection String
 
-The next step is to choose a connection method, you will click **Drivers** and then copy the connection string down below (the driver doesn't matter). 
-
-**You MUST replace the `<db_password>` within the connection string with the password you set when creating the database user!**
+The next step is to choose a connection method. Click **Drivers** and then copy the connection string down below (the driver doesn't matter). 
 
 ![Database URI](/assets/image/step4-5.gif)
 
-Example connection string format (not yours): `mongodb+srv://modmail:somepassword@cluster0.abcde.mongodb.net`
+**Replace the `<db_password>` within the connection string with the password you set when creating the database user!**
 
 Paste your connection string that you copied here (remember to replace `<db_password>` with the database user's password):
 
@@ -114,12 +108,11 @@ Paste your connection string that you copied here (remember to replace `<db_pass
 
 ### Step 5 - Choose a Logviewer Name
 
-Choose a memorable name for your Logviewer. You will be provided with a log URL under our **.modmail.dev** domain name. You can choose anything you like (with a few restrictions), if you feel it's reasonable, then most likely we do too! Note: only 3-16 alphanumeric characters are allowed.
+Choose a name for your Logviewer. We will provide you with a free log URL under our **.modmail.dev** domain name. You can choose anything you like (with a few restrictions), if you feel it's reasonable, then we most likely do too! Note: only 3-16 alphanumeric characters are allowed.
 
 Format (replace **yourchosenname** with your desired name): `https://yourchosenname.modmail.dev/`
 
 **Logviewer Name:** <input id="logviewer" oninput="document.getElementById('enteredlogviewer').innerText = 'LOG_URI=' + this.value;">
-
 
 ### Step 6 - Collecting Data
 
@@ -149,5 +142,5 @@ There you go! You should be all set :D
 After sending all the details back to the Patreon Modmail DM, we will validate everything you sent us. This process might take a few hours depends on our availability, so please bear with us while you wait. We will contact you when the bot is running or if there are any problems!
 
 
-> This guide is written by taku#3343 with parts taken from the [Modmail Wiki](https://github.com/kyb3r/modmail/wiki/Installation).<br>
+> This guide is written by taku with parts taken from the [Modmail Wiki](https://github.com/kyb3r/modmail/wiki/Installation).<br>
 > If you have found any issues with this guide, please report them to me. Thanks ❤️!
