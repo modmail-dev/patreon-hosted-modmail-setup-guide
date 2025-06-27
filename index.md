@@ -78,36 +78,39 @@ On the following page, click **Skip Personalization** (these questions does not 
 
 ![MongoDB Personalization Questions](/assets/image/step4-1.png)
 
-Next, you will be prompted to deploy your cluster. Click on the **free** option. Then choose any provider/region, US-WEST / US-CENTRAL is preferred but anything is fine. The cluster name can be anything. <u>Disable</u> both quick setup options!
+Next, you will be prompted to deploy your cluster. Click on the **free** option. Then choose any provider/region, US-WEST / US-CENTRAL is preferred but anything is fine. The cluster name can be anything. **<u>Disable</u> both quick setup options!**
 
 ![MongoDB Deploy Cluster](/assets/image/step4-2.png)
 
-### Create Database User
+### Quick Setup
 
-Click on **Database Access** on the sidebar, then click the green **Add New Database User** button in the middle. Set the username to `modmail` and password to something random (only letters and numbers, **no symbols**!). <u>You will need to share us this password so don't make it personal</u>. Privileges needs to be set as **Read and write to any database** or **Atlas admin**. Then click the **Add User** button at the bottom.
+You should now see a quick setup pop-up window asking you to add connection IP address and create a database user.
 
-![Create Database User](https://i.imgur.com/TI1R4nN.png)
+#### IP Address Whitelist
 
-### Whitelist All IP
+Choose **Allow Access from Everywhere**, it will autofill `0.0.0.0/0` as the IP address (don't change this), click **Add IP Address** to save.
 
-Click on **Network Access** on the sidebar, then click the green **Add IP Address** button in the middle. You must set the IP to `0.0.0.0/0`. Press **Confirm** to save the changes.
+![Whitelist IP](/assets/image/step4-3.gif)
 
-![Whitelist IP Address](https://i.imgur.com/53nWYjK.png)
+#### Create Database User
 
-### Retrieve the Database Connection String (URI)
+Under username: type `modmail`, and under password: type a random password with **only letters and numbers** (no symbols allowed).  <u>You will need to share us this password so don't make it personal.</u> Click **Create Database User** to save.
 
-Click on **Databases** on the sidebar, press **Connect**. If the button is grayed out, that means the database is still being created. It may take up to 15 minutes for the database to deploy; refresh/reload the webpage once in a while. After pressing **Connect**, choose the second option **Connect your application**. On the following screen, the driver doesn't matter. Copy the entire provided connection string.
+![Create user](/assets/image/step4-4.gif)
 
-**You MUST substitute the `<password>` within the connection string with the password you set when creating the database user!**
+#### Retrieve the Database Connection String
 
-![Database URI](https://i.imgur.com/tqiGwag.png)
+The next step is to choose a connection method, you will click **Drivers** and then copy the connection string down below (the driver doesn't matter). 
 
-Example connection string format: `mongodb+srv://modmail:somepassword@cluster0.abcde.mongodb.net`
+**You MUST replace the `<db_password>` within the connection string with the password you set when creating the database user!**
 
-Paste your connection string that you copied here (remember to replace `<password>` with the database user password!):
+![Database URI](/assets/image/step4-5.gif)
+
+Example connection string format (not yours): `mongodb+srv://modmail:somepassword@cluster0.abcde.mongodb.net`
+
+Paste your connection string that you copied here (remember to replace `<db_password>` with the database user's password):
 
 **Connection String:** <input id="mongo" oninput="document.getElementById('enteredmongo').innerText = 'DATABASE_URI=' + this.value;">
-
 
 ### Step 5 - Choose a Logviewer Name
 
